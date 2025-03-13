@@ -49,7 +49,7 @@ gradlePlugin {
     website = 'https://github.com/lni-dev/ljgel-glslc'
     vcsUrl = 'https://github.com/lni-dev/ljgel-glslc.git'
     plugins {
-        'cvg4j-glslc-gradle-plugin' {
+        'ljgel-glslc-gradle-plugin' {
             id = 'de.linusdev.ljgel.glslc'
             displayName = 'LJGEL GlslC'
             description = 'Compile Glsl shaders using glslc.'
