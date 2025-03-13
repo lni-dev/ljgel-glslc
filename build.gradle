@@ -46,13 +46,13 @@ publishing {
 
 gradlePlugin {
     // Define the plugin
-    website = 'https://www.linudev.de'
-    vcsUrl = 'https://github.com/lni-dev/CLGLJava.git'
+    website = 'https://github.com/lni-dev/ljgel-glslc'
+    vcsUrl = 'https://github.com/lni-dev/ljgel-glslc.git'
     plugins {
-        "cvg4j-glslc-gradle-plugin" {
+        'cvg4j-glslc-gradle-plugin' {
             id = 'de.linusdev.ljgel.glslc'
             displayName = 'LJGEL GlslC'
-            description = 'Compile Glsl shaders using glslc'
+            description = 'Compile Glsl shaders using glslc.'
             tags.addAll('glslc', 'vulkan', 'spir-v')
             implementationClass = 'de.linusdev.ljgel.glslc.GlslCGradlePlugin'
         }
