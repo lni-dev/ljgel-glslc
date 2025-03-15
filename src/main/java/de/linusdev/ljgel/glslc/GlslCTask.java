@@ -103,7 +103,7 @@ public class GlslCTask extends DefaultTask {
             Files.createDirectories(output);
             output = output.resolve(input.getFileName() + ".spv");
 
-            Process process = Runtime.getRuntime().exec(new String[]{"glslc", "-o", output.toString(), input.toString()});
+            Process process = Runtime.getRuntime().exec(new String[]{glslCLocation.get(), "-o", output.toString(), input.toString()});
 
             try (
                     BufferedReader inReader = process.inputReader();
